@@ -25,7 +25,7 @@ I thought it was logical to formulate this problem in terms of concurrent, commu
 I used Go because the code for spawning goroutines and communicating between them is concise, yet powerful. For example,
 multiplexing multiple channel reads onto one goroutine is easy using `select`.
 
-## Goroutines, channels
+## Goroutines, Channels
 The main goroutine reads log lines from stdin and passes them to two consuming goroutines. One of these is for 
 reporting, while the other is for alerting. 
 
